@@ -10,3 +10,7 @@ cp $BR2_EXTERNAL_KEYSTONE_PATH/board/starfive/visionfive2/20-end1.network $TARGE
 
 # Copy sshd config to enable ssh root login, password is "starfive"
 cp $BR2_EXTERNAL_KEYSTONE_PATH/board/starfive/visionfive2/sshd_config $TARGET_DIR/etc/ssh/sshd_config
+
+mkdir -p $TARGET_DIR/boot/dtbs/
+cp $BR2_EXTERNAL_KEYSTONE_PATH/board/starfive/visionfive2/dtbs/*.dtb $TARGET_DIR/boot/dtbs/
+cp $BR2_EXTERNAL_KEYSTONE_PATH/board/starfive/visionfive2/*gpu117 $TARGET_DIR/boot/
