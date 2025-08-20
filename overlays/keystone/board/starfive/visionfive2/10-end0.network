@@ -2,6 +2,4 @@
 Name=end0
 
 [Network]
-Address=192.168.31.2/24
-Gateway=192.168.31.1
-DNS=114.114.114.114
+DHCP=yes
